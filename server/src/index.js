@@ -1,10 +1,10 @@
 import express from "express";
-import cors from "cors";
 import dotenv from "dotenv";
+import cors from "cors";
 import cookieParser from "cookie-parser";
 import routes from "./routes";
+import connectdb from "./configs/connectdb";
 import { PORT } from "./utils/constants";
-import connectdb from "./config/connectdb";
 
 const app = express();
 
